@@ -1,0 +1,10 @@
+extends: default
+
+rules:
+  line-length:
+    max: 150
+    level: warning
+  braces:
+    max-spaces-inside: 1
+  comments:
+    min-spaces-from-content: 1

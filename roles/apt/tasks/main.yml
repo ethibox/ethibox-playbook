@@ -1,0 +1,36 @@
+---
+
+- name: Clean apt lists directory
+  file:
+    path: /var/lib/apt/lists/*
+    state: absent
+
+- name: Package installation
+  apt: name={{ item }} update_cache=yes state=latest
+  with_items:
+    - git
+    - htop
+    - vim
+    - ncdu
+    - silversearcher-ag
+    - zip
+    - unzip
+    - locate
+    - telnet
+    - sudo
+    - zsh
+    - wget
+    - curl
+    - tmux
+    - nmap
+    - net-tools
+    - apt-file
+
+- name: Security packages installation
+  apt: name={{ item }} state=latest
+  with_items:
+    - lynis
+    - debsums
+    - debsecan
+    - needrestart
+    - debian-goodies

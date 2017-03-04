@@ -1,0 +1,30 @@
+[submodule "roles/motd"]
+	path = roles/motd
+	url = https://github.com/manala/ansible-role-motd
+[submodule "roles/os-hardening"]
+	path = roles/os-hardening
+	url = https://github.com/dev-sec/ansible-os-hardening
+[submodule "roles/nginx-hardening"]
+	path = roles/nginx-hardening
+	url = https://github.com/dev-sec/ansible-nginx-hardening
+[submodule "roles/ssh-hardening"]
+	path = roles/ssh-hardening
+	url = https://github.com/dev-sec/ansible-ssh-hardening
+[submodule "roles/unattended-upgrades"]
+	path = roles/unattended-upgrades
+	url = https://github.com/debops/ansible-unattended_upgrades
+[submodule "roles/nodejs"]
+	path = roles/nodejs
+	url = https://github.com/geerlingguy/ansible-role-nodejs
+[submodule "roles/dokku"]
+	path = roles/dokku
+	url = https://github.com/ston3o/ansible-dokku
+[submodule "roles/fail2ban"]
+	path = roles/fail2ban
+	url = https://github.com/Oefenweb/ansible-fail2ban
+[submodule "roles/zabbix-agent"]
+	path = roles/zabbix-agent
+	url = https://github.com/ston3o/ansible-zabbix-agent
+[submodule "roles/firewall"]
+	path = roles/firewall
+	url = https://github.com/ston3o/ansible-role-firewall
