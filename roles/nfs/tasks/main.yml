@@ -1,0 +1,22 @@
+---
+
+- name: Install nfs-common
+  apt:
+    name: nfs-common
+    state: present
+
+- name: Mount NFS
+  mount:
+    path: /mnt/data
+    src: "{{ master }}:/mnt/data"
+    fstype: nfs
+    opts: auto,nofail,noatime,nolock,intr,tcp,bg,actimeo=1800
+    state: present
+
+- name: Create data directory
+  file:
+    path: /mnt/data
+    state: directory
+
+- name: Mount nfs
+  command: mount -a
