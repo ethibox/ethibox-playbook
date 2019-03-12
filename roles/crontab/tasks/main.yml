@@ -3,4 +3,4 @@
     name: "clean docker"
     minute: "0"
     hour: "*"
-    job: "/usr/bin/docker system prune -af"
+    job: "/usr/bin/docker system prune -af && /usr/bin/docker volume prune -f"
