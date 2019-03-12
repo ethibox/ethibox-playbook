@@ -5,7 +5,7 @@
     name: nfs-common
     state: present
 
-- name: Mount NFS
+- name: Add fstab
   mount:
     path: /mnt/data
     src: "{{ master }}:/mnt/data"
