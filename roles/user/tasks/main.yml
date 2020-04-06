@@ -1,5 +1,10 @@
 ---
 
+- name: Sudo installation
+  apt: name={{ item }} update_cache=yes state=latest
+  with_items:
+    - sudo
+
 - name: Create {{ user }} user
   user: name={{ user }} shell=/bin/bash groups=sudo,users state=present
 
