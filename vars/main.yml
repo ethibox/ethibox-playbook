@@ -27,6 +27,8 @@ firewall_allowed_udp_ports:
   - "60002"
   - "1194"
   - "4789"
+firewall_disable_firewalld: true
+firewall_disable_ufw: true
 sysctl_overwrite:
   net.ipv4.conf.default.log_martians: 1
   net.ipv4.conf.all.forwarding: 1
