@@ -25,6 +25,9 @@
     - nmap
     - net-tools
     - apt-file
+    - jq
+    - nodejs
+    - npm
 
 - name: Security packages installation
   apt: name={{ item }} state=latest
