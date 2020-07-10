@@ -10,9 +10,6 @@
 [submodule "roles/ssh-hardening"]
 	path = roles/ssh-hardening
 	url = https://github.com/dev-sec/ansible-ssh-hardening
-[submodule "roles/unattended-upgrades"]
-	path = roles/unattended-upgrades
-	url = https://github.com/debops/ansible-unattended_upgrades
 [submodule "roles/nodejs"]
 	path = roles/nodejs
 	url = https://github.com/geerlingguy/ansible-role-nodejs
