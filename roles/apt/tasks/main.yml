@@ -28,6 +28,8 @@
     - jq
     - nodejs
     - npm
+    - ctop
+    - iputils-ping
 
 - name: Security packages installation
   apt: name={{ item }} state=latest
