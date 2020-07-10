@@ -14,19 +14,7 @@ firewall_allowed_tcp_ports:
   - "143"
   - "587"
   - "993"
-  - "10051"
-  - "10050"
   - "2377"
-  - "2376"
-  - "7946"
-  - "4789"
-  - "3375"
-  - "2049"
-firewall_allowed_udp_ports:
-  - "60001"
-  - "60002"
-  - "1194"
-  - "4789"
 firewall_disable_firewalld: true
 firewall_disable_ufw: true
 sysctl_overwrite:
