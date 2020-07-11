@@ -24,6 +24,7 @@ sysctl_overwrite:
   kernel.kptr_restrict: 2
   kernel.core_uses_pid: 1
 ssh_allow_root_with_key: true
+ssh_permit_root_login: without-password
 ssh_print_motd: true
 ssh_allow_tcp_forwarding: true
 sftp_enabled: true
