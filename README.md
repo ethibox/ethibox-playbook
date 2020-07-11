@@ -10,10 +10,11 @@ git clone --recursive https://github.com/ethibox/ethibox-playbook
 ansible-playbook playbook.yml -u <user> -i <host>,
 ```
 
-## Example
+## Examples
 
 ```bash
 ansible-playbook playbook.yml -t base -u root -i 127.0.0.1:22,
+ansible-pull -U https://github.com/ethibox/ethibox-playbook --connection=local -i localhost, playbook.yml
 ```
 
 ## Support
