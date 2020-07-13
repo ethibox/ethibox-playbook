@@ -9,7 +9,6 @@
     - { role: user, tags: ['user', 'base', 'minimal'] }
     - { role: swap, tags: ['swap', 'base', 'minimal'] }
     - { role: crontab, tags: ['crontab', 'base', 'minimal'] }
-    - { role: nfs, tags: ['nfs', 'base', 'minimal'], when: master is defined }
     - { role: apt, tags: ['apt', 'base', 'minimal'] }
     - { role: firewall, tags: ['firewall', 'security', 'base'] }
     - { role: fail2ban, tags: ['fail2ban', 'security', 'base'] }
