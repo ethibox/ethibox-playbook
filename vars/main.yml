@@ -15,6 +15,10 @@ firewall_allowed_tcp_ports:
   - "587"
   - "993"
   - "2377"
+  - "7946"
+firewall_allowed_udp_ports:
+  - "4789"
+  - "7946"
 firewall_disable_firewalld: true
 firewall_disable_ufw: true
 sysctl_overwrite:
