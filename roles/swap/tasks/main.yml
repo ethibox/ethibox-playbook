@@ -6,7 +6,7 @@
   register: swap_file_check
 
 - name: Create swap file
-  command: fallocate -l 2G /swap
+  command: fallocate -l 3G /swap
   when: not swap_file_check.stat.exists
 
 - name: Init swap file
