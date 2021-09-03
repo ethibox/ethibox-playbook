@@ -32,6 +32,8 @@
     - iputils-ping
     - httpie
     - trash-cli
+    - restic
+    - rclone
 
 - name: Security packages installation
   apt: name={{ item }} state=latest
