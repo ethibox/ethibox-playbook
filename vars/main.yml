@@ -1,34 +1,15 @@
----
 user: admin
-fail2ban_services:
-  - name: sshd
-    port: 22
-    maxretry: 5
-    bantime: -1
-firewall_enabled_at_boot: true
-firewall_allowed_tcp_ports:
-  - "22"
-  - "80"
-  - "443"
-  - "25"
-  - "143"
-  - "587"
-  - "993"
-  - "2377"
-  - "7946"
-firewall_allowed_udp_ports:
-  - "4789"
-  - "7946"
-firewall_disable_firewalld: true
-firewall_disable_ufw: true
-sysctl_overwrite:
-  net.ipv4.conf.default.log_martians: 1
-  net.ipv4.conf.all.forwarding: 1
-  net.ipv4.ip_forward: 1
-  kernel.kptr_restrict: 2
-  kernel.core_uses_pid: 1
 ssh_allow_root_with_key: true
 ssh_permit_root_login: without-password
 ssh_print_motd: true
 ssh_allow_tcp_forwarding: true
 sftp_enabled: true
+firewall_enabled_at_boot: true
+firewall_disable_firewalld: true
+firewall_disable_ufw: true
+firewall_allowed_tcp_ports: [22, 80, 443, 25, 587, 143, 993]
+fail2ban_services:
+  - name: sshd
+    port: 22
+    maxretry: 5
+    bantime: -1
