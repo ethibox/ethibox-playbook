@@ -10,7 +10,7 @@
     - { role: swap, tags: ['swap', 'base', 'minimal'] }
     - { role: crontab, tags: ['crontab', 'base', 'minimal'] }
     - { role: apt, tags: ['apt', 'base', 'minimal'] }
-    # - { role: firewall, tags: ['firewall', 'security', 'base'] }
+    - { role: firewall, tags: ['firewall', 'security', 'base'] }
     - { role: fail2ban, tags: ['fail2ban', 'security', 'base'] }
     - { role: ssh-hardening, tags: ['ssh-hardening', 'hardening', 'security', 'base'] }
     - { role: os-hardening, tags: ['os-hardening', 'hardening', 'security', 'base'] }
