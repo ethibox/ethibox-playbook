@@ -1,15 +1,9 @@
 [submodule "roles/motd"]
 	path = roles/motd
 	url = https://github.com/manala/ansible-role-motd
-[submodule "roles/os-hardening"]
-	path = roles/os-hardening
-	url = https://github.com/dev-sec/ansible-os-hardening
 [submodule "roles/nginx-hardening"]
 	path = roles/nginx-hardening
 	url = https://github.com/dev-sec/ansible-nginx-hardening
-[submodule "roles/ssh-hardening"]
-	path = roles/ssh-hardening
-	url = https://github.com/dev-sec/ansible-ssh-hardening
 [submodule "roles/nodejs"]
 	path = roles/nodejs
 	url = https://github.com/geerlingguy/ansible-role-nodejs
