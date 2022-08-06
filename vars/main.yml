@@ -8,7 +8,7 @@ firewall_enabled_at_boot: true
 firewall_disable_firewalld: true
 firewall_disable_ufw: true
 firewall_log_dropped_packets: false
-firewall_allowed_tcp_ports: [22, 80, 443, 25, 587, 143, 993]
+firewall_allowed_tcp_ports: [22, 80, 443]
 fail2ban_services:
   - name: sshd
     port: 22
