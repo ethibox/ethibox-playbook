@@ -8,7 +8,7 @@ Ethibox ansible playbook
 ```bash
 git clone --recursive https://github.com/ethibox/ethibox-playbook
 ansible-galaxy collection install devsec.hardening
-ansible-playbook playbook.yml -u <user> -i <host>,
+ansible-playbook playbook.yml [-t <tag>] -u <user> -i <host>,
 ```
 
 ## License
